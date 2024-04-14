@@ -1,7 +1,7 @@
 import React from 'react'
 import {createBrowserRouter} from 'react-router-dom'
-import List from './View/page/List/List';
-import Detail from './View/page/Detail';
+import List from '../View/pages/List/List';
+import Detail from '../View/pages/Detail';
 
 const router = createBrowserRouter([
     {
@@ -9,7 +9,7 @@ const router = createBrowserRouter([
         element: <List/>,
     },
     {
-        path: "/detail",
+        path: "/detail/:number",
         element: <Detail/>
     },
 ]);
