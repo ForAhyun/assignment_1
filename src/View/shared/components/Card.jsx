@@ -24,16 +24,16 @@ const Card = ({issueItem, isDetailPage}) => {
 
                     {isDetailPage && <ProfileImg src={user?.avatar_url} alt='avatar'></ProfileImg>}
 
-                    <LeftCotainer>
+                    <LeftContainer>
                         <TitleItem>#{number} {title}</TitleItem>
                         <ItemInfo> 
                             작성자 : {user?.login} 작성일 : {date.getFullYear()}년 {date.getMonth()+1}월 {date.getDate()}일
                         </ItemInfo>
-                    </LeftCotainer>
+                    </LeftContainer>
                     
-                    <RightCotainer>
+                    <RightContainer>
                         <Comment> 코멘트 : {comments}</Comment>
-                    </RightCotainer>
+                    </RightContainer>
                     
                 </CardContainer>
 
@@ -60,7 +60,7 @@ const CardContainer = styled.div`
     }
 `;
 
-const LeftCotainer = styled.div`
+const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -70,7 +70,7 @@ const LeftCotainer = styled.div`
 }
 `;
 
-const RightCotainer = styled.div``;
+const RightContainer = styled.div``;
 
 const TitleItem = styled.div`
     display: flex;

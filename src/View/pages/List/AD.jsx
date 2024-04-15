@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import adImg from "../../../assets/ad.png"
+import adImg from "../../../assets/ad.jpg"
 
 const AD = () => {
     return (
         <ADContainer>
-            <a href="https://thingsflow.com/ko/home">
+            <a href="https://www.wanted.co.kr/">
                 <ADItem>
                     <img src={adImg} alt="ad"/>
                 </ADItem>
@@ -39,7 +39,7 @@ const ADItem = styled.div`
     width: 100%;
     img {
         width: 768px;
-        height: auto;
+        height: 400px;
     }
 
     @media screen and (max-width: 768px) {
